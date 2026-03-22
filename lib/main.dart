@@ -12,9 +12,6 @@ import 'features/home/presentation/home_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
-  // Note: Firebase initialization will fail without google-services.json / GoogleService-Info.plist
-  // For the purpose of this demonstration/code handover, we wrap it in a try-catch.
-  // In a real production app, ensure you've run `flutterfire configure`.
   try {
     await Firebase.initializeApp();
   } catch (e) {

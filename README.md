@@ -1,6 +1,10 @@
+username: shabnashana707@gmail.com
+password: 123456
+
 # Taxxon Flutter App
 
 A modern tax and VAT management mobile application built with Flutter, matching high-fidelity Figma designs.
+
 
 ## 🚀 Features
 
@@ -40,8 +44,7 @@ Before running the app, you need to connect it to your Firebase project:
 4.  Download `google-services.json` and place it in `android/app/`.
 5.  Enable **Email/Password** authentication in the Firebase Auth section.
 6.  Add a test user manually in the Firebase console.
-
-> Detailed steps are available in [firebase_setup.md](.gemini/antigravity/brain/<convo-id>/firebase_setup.md) 
+ 
 
 ### 2. Run the App
 ```bash
@@ -60,5 +63,4 @@ flutter run
 - `lib/features/home`: Dashboard UI and Transaction components.
 - `lib/models`: Shared transaction and state models.
 
----
-*Created by Antigravity for Taxxon.*
+

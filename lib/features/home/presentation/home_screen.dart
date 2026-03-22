@@ -11,38 +11,37 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       backgroundColor: AppColors.white,
-      body: SafeArea(
-        child: Column(
-          children: [
-            _buildHeader(context, ref),
-            _buildFilterSection(context, ref),
-            const SizedBox(height: 16),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  children: [
-                    _buildVatSummaryCards(),
-                    const SizedBox(height: 16),
-                    Expanded(child: _buildTransactionList()),
-                    const SizedBox(height: 16),
-                    _buildActionButtons(),
-                    const SizedBox(height: 16),
-                  ],
-                ),
+      body: Column(
+        children: [
+          _buildHeader(context, ref),
+          _buildFilterSection(context, ref),
+          const SizedBox(height: 16),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                children: [
+                  _buildVatSummaryCards(),
+                  const SizedBox(height: 16),
+                  Expanded(child: _buildTransactionList()),
+                  const SizedBox(height: 16),
+                  _buildActionButtons(),
+                  const SizedBox(height: 16),
+                ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
       bottomNavigationBar: _buildBottomNav(),
     );
   }
 
   Widget _buildHeader(BuildContext context, WidgetRef ref) {
+    final topPadding = MediaQuery.of(context).padding.top;
     return Container(
       color: AppColors.primary,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+      padding: EdgeInsets.fromLTRB(16, topPadding + 10, 16, 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

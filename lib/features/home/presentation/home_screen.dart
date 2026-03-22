@@ -387,7 +387,7 @@ class HomeScreen extends ConsumerWidget {
                   style: const TextStyle(color: Colors.white70, fontSize: 10),
                 ),
               if (subtitle.isEmpty)
-                const SizedBox(height: 12), // Placeholder height if no subtitle
+                const SizedBox(height: 12), 
             ],
           ),
           Icon(icon, color: Colors.white, size: 24),

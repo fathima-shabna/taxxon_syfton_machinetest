@@ -37,9 +37,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
     final authState = ref.read(authControllerProvider);
     if (authState.hasError) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text(authState.error.toString())));
+      final errorStr = authState.error.toString();
+      // Silently ignore internal plugin type-cast glitches that don't prevent login
+      if (!errorStr.contains('PigeonUserDetails')) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(errorStr)),
+        );
+      }
     }
   }
 

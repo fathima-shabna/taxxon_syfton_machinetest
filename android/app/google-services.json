@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "409506025606",
+    "project_id": "taxxon-6e014",
+    "storage_bucket": "taxxon-6e014.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409506025606:android:b435826ea13ecb69068107",
+        "android_client_info": {
+          "package_name": "com.example.taxxon_fathimashabna"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC46Ij0lPE4s2S3ZTMELhwiduXGcQcmtPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
